@@ -6,7 +6,7 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/storybook/(.*)", "dest": "/storybook-static/$1" },
+    { "src": "/storybook/(.*)", "dest": "/storybook-static/$1" }
   ],
   "buildCommand": "npm run build && npm run build-storybook",
   "installCommand": "npm install",
