@@ -1,11 +1,12 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "builds": [
+    { "src": "storybook-static/**", "use": "@vercel/static" },
     { "src": "package.json", "use": "@vercel/next" }
   ],
   "routes": [
+    { "handle": "filesystem" },
     { "src": "/storybook/(.*)", "dest": "/storybook-static/$1" },
-    { "handle": "filesystem" }
   ],
   "buildCommand": "npm run build && npm run build-storybook",
   "installCommand": "npm install",
