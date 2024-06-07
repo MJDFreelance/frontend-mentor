@@ -1,5 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "builds": [
+    { "src": "package.json", "use": "@vercel/next" }
+  ],
   "routes": [
     { "src": "/storybook/(.*)", "dest": "/storybook-static/$1" }
   ],
