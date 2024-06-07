@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.ovals {
+  background-image: url('/images/backgrounds/oval.svg');
+}
