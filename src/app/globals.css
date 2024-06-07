@@ -32,6 +32,15 @@ body {
   }
 }
 
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 .ovals {
   background-image: url('/images/backgrounds/oval.svg');
 }
+
+.attribution { font-size: 11px; text-align: center; margin-top: 16px; }
+.attribution a { color: hsl(228, 45%, 44%); }
