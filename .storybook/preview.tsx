@@ -6,9 +6,7 @@ const withGlobalHTML = (Story:any, context:any) => {
   document.title = `Frontend Mentor | ${context.name}`;
 
   return (
-      <div>
-        <header>
-        </header>
+      <main>
         <Story {...context} />
         <footer>
           <div className="attribution">
@@ -16,7 +14,7 @@ const withGlobalHTML = (Story:any, context:any) => {
             Coded by <a href="#">Michael Davies</a>.
           </div>
         </footer>
-      </div>
+      </main>
   );
 };
 

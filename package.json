@@ -8,17 +8,18 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_2440b4f85aa4392"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-aria-components": "^1.2.1",
+    "react-dom": "^18",
+    "react-hook-form": "^7.51.5",
+    "react-query": "^3.39.3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.5.0",
-    "@storybook/addon-docs": "^8.1.6",
     "@storybook/addon-essentials": "^8.1.6",
     "@storybook/addon-interactions": "^8.1.6",
     "@storybook/addon-links": "^8.1.6",
@@ -31,7 +32,6 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "chromatic": "^11.5.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-plugin-storybook": "^0.8.0",
